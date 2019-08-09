@@ -32,12 +32,14 @@ add_action( 'wp_enqueue_scripts', 'adforest_child_enqueue_child_styles' );
 /*Write here your own functions */
 
 
+// update
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/user-name/repo-name/',
+	'https://github.com/AlexIschenko/harchi-child',
 	__FILE__,
 	'harchi-child'
 );
+$myUpdateChecker->setAuthentication('160840e846570b870e9ceba55f55b00b9bf90a11 ');
 
 
 
