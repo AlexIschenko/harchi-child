@@ -1,0 +1,232 @@
+/*
+Theme Name:   Harchi child for AdForest theme
+Description:  Write here a brief description about your child-theme
+Author:       Alex Ischenko
+Author URL:   Write here the author's blog or website url
+Template:     adforest
+Version:      1.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  adforest-child
+*/
+
+/* Write here your own personal stylesheet */
+
+/* REGISTER */
+label[for=minimal-checkbox-1] {
+	display: inline;
+}
+
+
+/* MESSAGES */
+
+.ai_md_hidden {
+	display: none;
+}
+.grecaptcha-badge{
+	visibility: collapse !important;  
+}
+
+
+
+
+/* BOX_SHADOW */
+.user_profile_header,
+.profile-tabs,
+.widget,
+.singlepost-content,
+.panel,
+.postdetails .sw-theme-default,
+.seller-public-profile-items,
+.seller-public-profile-left-section,
+.ads-list-archive,
+.form-grid,
+.mob-footer-section,
+#search-section,
+.blog-post,
+body.woocommerce-cart .static-page .container > .row
+{
+	box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.15) !important;
+	border: none !important
+}
+
+
+.grid-card {
+	box-shadow: none !important;
+}
+
+
+@media (min-width:1200px) {
+	.container {
+		width: 1080px !important;
+	}
+}
+
+
+
+
+
+
+ /* MAIN SEARCH FORM */
+#search_category_field,
+#search_location_field {
+	cursor: pointer;
+}
+#search_category_modal,
+#search_location_modal {
+	position: absolute;
+	height: auto;
+	background: #fff;
+	left: 15px;
+	right: 15px;
+	display: none;
+	z-index: 10;
+	min-height: 250px;
+}
+.top_level {
+	display: block !important;
+}
+.top_level,
+.sub_cat_wrap {
+	padding: 0 20px 15px 15px;
+	box-shadow: inset 0 0 0 1px #ccc;
+	min-height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	background: #fff;
+	display: none;
+	z-index: 1;
+	height: auto;
+
+}
+#search_category_modal .top_level_cats_wrap,
+#search_category_modal .sub_cats_wrap {
+	column-count: 3;
+	line-height: 2.2em;
+	padding-top: 20px;
+}
+#search_location_modal .top_level_cats_wrap,
+#search_location_modal .sub_cats_wrap {
+	column-count: 3;
+	padding-top: 20px;
+}
+
+.current_top_level,
+.back_to_top_level {
+	min-height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #eee;
+}
+.ad_cat_item {
+	color: #333;
+	display: inline-block;
+	width: 100%;
+	line-height: 1.4em;
+	margin-bottom: 0.6em;
+}
+
+.cat_title,
+.current_top_level,
+.back_to_top_level,
+.all_cats {
+	color: #333;
+	cursor: pointer;
+}
+
+
+@media (max-width: 991px) {
+	#search_category_modal .top_level_cats_wrap,
+	#search_category_modal .sub_cats_wrap {
+		column-count: 1 !important;
+		line-height: 2.2em;
+		padding-top: 20px;
+	}
+	#search_location_modal .top_level_cats_wrap,
+	#search_location_modal .sub_cats_wrap {
+		column-count: 1 !important;
+		padding-top: 20px;
+	}
+
+}
+
+
+
+
+
+/* BULLET PRELOADER */
+.bull_preloader {
+	width: 1em;
+	height: 1em;
+	margin-right: 0.5em;
+	display: inline-block;
+	position: relative;
+}
+.bull_preloader:after {
+	content: '';
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 0.55em;
+	height: 0.55em;
+	background-color: #999;
+	border-radius: 50%;
+	box-sizing: content-box;
+	transition: background-color 200ms;
+}
+.bull_loading.bull_preloader:after {
+	width: 0.7em;
+	height: 0.7em;
+	background-color: transparent;
+	border: 2px solid #ccc;
+	border-bottom-color: #777;
+	animation: loader_rotate 800ms infinite linear;
+	transition: background-color 200ms;
+}
+@keyframes loader_rotate {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+.cat_arrow {
+	position: relative;
+	margin-left: 0.5em;
+}
+.cat_arrow i {
+	position: absolute;
+	font-size: 1.4em;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.cat_arrow .close_modal_icon {
+	position: absolute;
+	font-size: 26px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.back_to_top_level .cat_arrow {
+	margin-right: 1em;
+}
+.current_top_level .cat_arrow {
+	margin-right: 1.3em;
+}
+.search_category_field_clear,
+.search_location_field_clear {
+	display: none;
+	cursor: pointer;
+}
+
+
+
+/* MISC */
+#step-2 #ad_country_sub_sub_div {
+	visibility: hidden !important;
+	height: 0 !important;
+	overflow: hidden;
+	margin: 0;
+}
