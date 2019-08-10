@@ -39,7 +39,6 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	__FILE__,
 	'harchi-child'
 );
-$myUpdateChecker->setAuthentication('160840e846570b870e9ceba55f55b00b9bf90a11 ');
 
 
 
